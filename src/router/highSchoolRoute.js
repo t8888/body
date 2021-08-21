@@ -23,7 +23,7 @@ let routes = [
     {
         //个人数据首页
         path: "/yjWatchDataV",
-        name: "personal",
+        name: "yjWatchDataV",
         component: resolve => require(['@/views/data-center/personal'], resolve)
     },
     {
@@ -36,7 +36,7 @@ let routes = [
     {
         path: "/yjWatchTesting",
         name: "yjWatchTesting",
-        component: resolve => require(['@/views/data-center/team'], resolve)
+        component: resolve => require(['@/views/data-center/data-center'], resolve)
     },
 ]
 export default routes;

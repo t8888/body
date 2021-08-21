@@ -6,7 +6,7 @@
       </el-breadcrumb>
     </div>
     <div class="un-content text-center h1">
-      <h1>{{userName}}老师，欢迎登陆系统</h1>
+      <h1>{{ userName }}老师，欢迎登陆系统</h1>
       <canvas ref="canvas" id="canvas"></canvas>
     </div>
   </div>
@@ -25,9 +25,8 @@ export default {
   },
   methods: {
     animation() {
-        console.log(this.$refs.canvas)
-      var canvas =  this.$refs.canvas,
-     
+      console.log(this.$refs.canvas);
+      var canvas = this.$refs.canvas,
         ctx = canvas.getContext("2d"),
         w = (canvas.width = window.innerWidth),
         h = (canvas.height = window.innerHeight),
@@ -35,7 +34,7 @@ export default {
         stars = [],
         count = 0,
         maxStars = 1300; //星星数量
-      
+
       var canvas2 = this.$refs.canvas,
         ctx2 = canvas2.getContext("2d");
       canvas2.width = 100;
@@ -77,7 +76,7 @@ export default {
       }
 
       var Star = function() {
-        console.log(w,h)
+        console.log(w, h);
         this.orbitRadius = random(maxOrbit(w, h));
         this.radius = random(60, this.orbitRadius) / 8;
         //星星大小
@@ -131,8 +130,8 @@ export default {
         window.requestAnimationFrame(animation);
       }
       animation();
-    }
-  }
+    },
+  },
 };
 </script>
 
@@ -140,7 +139,6 @@ export default {
 <style lang="scss" scoped>
 canvas {
   width: 100%;
-  height: 100%; /*默认全屏显示 可自己设置高度640px*/;
-
+  height: 100%; /*默认全屏显示 可自己设置高度640px*/
 }
 </style>

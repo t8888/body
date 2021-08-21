@@ -7,7 +7,7 @@
         <el-breadcrumb-item>个人报告</el-breadcrumb-item>
       </el-breadcrumb>
     </div>
-    <div class="un-content" v-loading="loading">
+    <div class="un-content">
       <div class="p-lrbg">
         <div class="seach_box">
           <div class="time_box">
@@ -54,7 +54,6 @@
             ref="singleTable"
             highlight-current-row
             size="small"
-            :data="list"
             tooltip-effect="dark"
             width="100%"
           >
@@ -112,8 +111,8 @@
           <el-pagination
             background
             layout="total, prev, pager, next, jumper"
-            :current-page="params.pageindex"
-            :total="total"
+            :current-page="1"
+            :total="10"
             @current-change="currentChangeAction"
             @prev-click="currentChangeAction"
             @next-click="currentChangeAction"
@@ -130,7 +129,9 @@ export default {
   components: {},
   data() {
     const vm = this;
-    return {};
+    return {
+      yearValue: "",
+    };
   },
   mounted() {
     this.getschoolGrade();
@@ -159,9 +160,7 @@ export default {
           token: this.userInfo.token,
           uid: this.userInfo.uid,
         })
-        .then((res) => {
-          this.loading = false;
-        });
+        .then((res) => {});
     },
     // 分页更改
     currentChangeAction(val) {
