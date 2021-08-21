@@ -1,0 +1,335 @@
+@charset "UTF-8";
+/* element-ui 公用颜色变量 */
+/* 改变主题色变量 */
+/* 改变 icon 字体路径变量，必需 */
+/*
+ * description： element_ui 样式调整
+*/
+.login .input-left-icon {
+  color: #9F9F9F;
+  font-size: 18px;
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 20px;
+  height: 50px;
+  line-height: 50px;
+  z-index: 2;
+  margin: auto 0;
+}
+
+.login .el-input {
+  position: relative;
+  z-index: 1;
+}
+
+.login .el-input__inner {
+  padding-left: 50px;
+  tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: transparent;
+  font-size: 18px;
+}
+
+.login .el-form-item__error {
+  font-size: 16px;
+}
+
+.login .el-input--small .el-input__inner {
+  height: 52px;
+  line-height: 52px;
+}
+
+.form-body .form-card-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form-body .el-card__header {
+  background-color: #ddd;
+}
+
+.form-body .el-collapse {
+  margin-bottom: 20px;
+  border: none;
+}
+
+.form-body .el-card {
+  border-radius: 0;
+  background-color: #f1f1f1;
+  width: 70%;
+  margin-left: 150px;
+  margin-bottom: 20px;
+}
+
+.form-body .el-collapse-item__header {
+  background: #9f8c60;
+  padding-left: 90px;
+  color: #fff;
+  font-size: 16px;
+}
+
+.form-body .el-collapse-item__wrap {
+  border: 1px solid #9f8c60;
+  margin-bottom: 20px;
+}
+
+.form-body .el-collapse-item__content {
+  padding: 20px 0 1px;
+  background: #fff;
+  margin-bottom: 20px;
+}
+
+.el-menu--horizontal > .el-submenu .el-submenu__title {
+  height: 100%;
+  line-height: 50px;
+  border: none;
+  color: #fff;
+}
+
+.el-menu--horizontal > .el-submenu .el-submenu__title i {
+  color: #fff;
+}
+
+.el-menu--collapse .el-menu-item .el-submenu__icon-arrow,
+.el-menu--collapse .el-submenu > .el-submenu__title .el-submenu__icon-arrow {
+  display: none;
+}
+
+.el-menu--collapse .el-menu-item span,
+.el-menu--collapse .el-submenu > .el-submenu__title span {
+  height: 0;
+  width: 0;
+  overflow: hidden;
+  visibility: hidden;
+  display: inline-block;
+}
+
+.el-submenu .el-submenu__title {
+  height: 2.5rem;
+  line-height: 2.5rem;
+}
+
+.el-submenu .el-submenu__title .icon-shu {
+  color: #fdb200 !important;
+  font-size: 1.125rem;
+}
+
+.el-menu-vertical-demo {
+  width: 250px;
+  max-width: 200px;
+}
+
+.el-menu-vertical-demo.el-menu--collapse {
+  width: 64px;
+}
+
+.el-menu {
+  overflow: auto;
+  background: #fff;
+}
+
+.el-menu .el-submenu__title {
+  font-weight: 500;
+  color: #fff;
+}
+
+.el-menu .el-submenu__title:hover, .el-menu .el-submenu__title.is-active {
+  color: #fdb200;
+}
+
+.el-menu .el-submenu__title:hover i, .el-menu .el-submenu__title.is-active i {
+  color: #fdb200;
+}
+
+.el-menu .el-submenu__title i {
+  color: #fff;
+}
+
+.el-menu .el-menu,
+.el-menu .el-submenu {
+  overflow: hidden;
+}
+
+.el-menu .el-menu-item {
+  overflow: hidden;
+  color: #fff;
+}
+
+.el-menu .el-menu-item span {
+  font-weight: 500;
+}
+
+.el-menu .el-menu-item i {
+  color: #fff;
+}
+
+.el-menu .el-menu-item:hover, .el-menu .el-menu-item.is-active {
+  color: #fdb200;
+}
+
+.el-menu .el-menu-item:hover i, .el-menu .el-menu-item.is-active i {
+  color: #fdb200;
+}
+
+.top-sc .el-radio-button__orig-radio:checked + .el-radio-button__inner,
+.top-sc .el-radio-button__inner,
+.top-sc .el-radio-button__inner {
+  background: none !important;
+  border-left: none !important;
+  border-top: none !important;
+  border-bottom: none !important;
+  border-color: #D4D4D4 !important;
+  box-shadow: none;
+  padding: 0 10px;
+}
+
+.top-sc .el-radio-button:last-child .el-radio-button__inner {
+  border-right: none !important;
+}
+
+.el-form .el-form-item .el-input.item-input {
+  width: 100% !important;
+}
+
+.el-form .el-form-item .el-input.item-input .el-input__inner {
+  width: 100%;
+}
+
+.el-form-item.is-success .el-textarea__inner:focus {
+  border-color: #fdb200 !important;
+}
+
+.el-table {
+  font-size: .75rem;
+}
+
+.el-botton,
+.el-button--small {
+  padding: .5625rem .625rem;
+}
+
+.el-pagination {
+  float: right;
+  padding: .9375rem !important;
+}
+
+.search-box .el-date-editor--daterange.el-input,
+.search-box .el-date-editor--daterange.el-input__inner,
+.search-box .el-date-editor--timerange.el-input,
+.search-box .el-date-editor--timerange.el-input__inner {
+  width: 100%;
+}
+
+.form-label-150.el-form .el-form-item .el-form-item__label {
+  width: 150px !important;
+}
+
+.form-label-150 .el-form-item__content {
+  margin-left: 150px !important;
+}
+
+.el-form-item--small.el-form-item {
+  margin-bottom: 1.25rem !important;
+}
+
+.el-form-item--small .el-form-item__error {
+  line-height: 1.125rem;
+}
+
+.el-input-group__append,
+.el-input-group__prepend {
+  border-radius: 0 !important;
+}
+
+.el-input__inner:hover {
+  border-color: #c0c4cc;
+}
+
+.el-input input,
+.el-input textarea,
+.el-textarea input,
+.el-textarea textarea {
+  border-radius: 0;
+}
+
+.el-date-editor.el-input {
+  width: 100% !important;
+}
+
+.el-form .el-form-item .el-form-item__label {
+  padding-right: 1.25rem;
+}
+
+.el-form .el-form-item .el-input,
+.el-form .el-form-item .el-input__inner,
+.el-form .el-form-item .el-textarea,
+.el-form .el-form-item .el-select {
+  width: 28.125rem;
+  max-width: 100%;
+}
+
+.pca-box .el-select {
+  width: 140px !important;
+  margin-right: 14px;
+}
+
+.upload .el-upload-list__item,
+.upload .el-upload--picture-card {
+  border-style: solid;
+  border-color: #dcdfe6;
+  transition: border-color .5s;
+  border-radius: 0;
+}
+
+.upload .el-upload-list__item:visited,
+.upload .el-upload--picture-card:visited {
+  border-color: #dcdfe6;
+}
+
+.upload .el-upload-list__item:hover,
+.upload .el-upload--picture-card:hover {
+  border-color: #c0c7cc;
+}
+
+.upload .el-upload-list--picture-card .el-upload-list__item {
+  border-radius: 0;
+}
+
+.upload.uploadError .el-upload-list__item,
+.upload.uploadError .el-upload--picture-card {
+  border-color: #f05050;
+}
+
+.upload.uploadSuccess .el-upload-list__item,
+.upload.uploadSuccess .el-upload--picture-card {
+  border-color: #61c64c;
+}
+
+.upload .el-upload-list--picture-card .el-upload-list__item-status-label i {
+  position: absolute;
+  top: .625rem;
+  right: .9375rem;
+  margin-top: 0;
+}
+
+.el-dialog .el-dialog__body,
+.el-dialog .el-dialog__footer {
+  padding: 1.25rem 6rem;
+}
+
+.el-dialog .el-dialog__body {
+  max-height: 28rem;
+  overflow-y: auto;
+}
+
+.el-dialog .el-dialog__footer {
+  border-top: .0625rem solid #e5e5e5;
+  text-align: center;
+}
+
+.el-dialog .el-dialog__header {
+  border-bottom: .0625rem solid #e5e5e5;
+}
